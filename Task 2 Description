@@ -1,0 +1,22 @@
+This script utilizes Python libraries like Pandas and scikit-learn to build a simple movie recommendation system based on k-nearest neighbors (KNN) algorithm. Let's break down the script:
+
+1. Imports: The script starts by importing necessary libraries:
+   - `pandas` as `pd`: This library is used for data manipulation and analysis.
+   - `NearestNeighbors` from `sklearn.neighbors`: This module is imported to perform the k-nearest neighbors algorithm.
+   - `warnings`: This library is used to suppress warnings.
+
+2. Read Data: The script reads a CSV file containing movie dataset using `pd.read_csv()`. The dataset likely contains information about movies, possibly including features like genre, director, actors, and ratings.
+
+3. Data Exploration: It prints the first 10 rows of the dataset using `data.head(10)` to provide a glimpse of the data.
+
+4. Recommendation Function: The `recommend_movie(movie_name)` function is defined to recommend a movie similar to the input movie. It performs the following steps:
+   - Finds the index of the input movie in the dataset.
+   - Computes the k-nearest neighbors of the input movie using the KNN algorithm.
+   - Retrieves the index of the first recommended movie (excluding the input movie itself).
+   - Returns the title of the first recommended movie.
+
+5. User Input and Recommendation: It prompts the user to input a movie name using `input()`. Then, it calls the `recommend_movie()` function with the input movie name to get the recommended movie. Finally, it prints the recommended movie.
+
+6. Output: Upon execution, the script asks the user to input a movie name. After receiving the input, it provides a recommended movie that is similar to the input movie based on the predefined similarity metric (cosine similarity) used by the KNN algorithm.
+
+This script serves as a basic example of implementing a movie recommendation system using KNN algorithm and can be further expanded and improved with additional features and more sophisticated algorithms.
