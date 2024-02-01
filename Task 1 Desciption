@@ -1,0 +1,38 @@
+Task 1: Building a Machine Learning Algorithm to Predict Car Prices
+
+1. Dataset Loading and Statistical Analysis:
+   - Loaded the dataset and performed statistical analysis to understand the dataset characteristics.
+
+2. Feature Engineering:
+   - Derived the age of vehicles from the 'Make_year' feature to enhance the dataset.
+
+3. Handling Null Values and Unique Counts:**
+   - Checked for null values and unique counts in the dataset to understand data completeness and variability.
+
+4. Data Columns Division based on Data Types:**
+   - Segregated data columns based on their data types for easier data processing.
+
+5. Handling Consistent Entry in the Price Column:**
+   - Separated all entries with "call for Price" in the 'Price' column to handle them separately during further processing.
+
+6. Encoding Categorical Variables and Price Data Type Conversion:**
+   - Encoded categorical variables and converted the 'Price' data type to integer for further analysis.
+
+7. Feature Importance Analysis:**
+   - Utilized feature importance technique to identify influential features and select potential predictors for the model. Chose all variables initially to observe results without assumptions.
+
+8. Predictor Variable Selection and Price Standardization:**
+   - Added chosen variables to the predictor variable ArrayList and standardized the 'Price' values using the Min-Max scaler for uniformity in evaluation metrics.
+
+9. Random Forest Regression with Default Parameters:**
+   - Employed Random Forest Regression with default parameters to initially predict car prices.
+
+10. Model Evaluation with R-squared and Mean Squared Error (MSE):**
+   - Assessed model accuracy and error using R-squared and MSE, respectively. Ensured satisfactory performance metrics.
+
+11. Residual Computation and Analysis:**
+   - Computed residuals and evaluated their mean to ensure the reliability of the model predictions.
+
+12. Predictions for Experimental Data:
+   - Used the developed model to predict prices for cars with "call for Price" entries in the 'Price' column. 
+   - Specifically checked predictions for 'Model' = "HS", while also inverse scaling the price. Observed price changes with variations in assembly and other features.
